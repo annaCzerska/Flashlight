@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:scrollbarSize="4dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtFlashlight"
+        android:layout_width="261dp"
+        android:layout_height="62dp"
+        android:autoText="false"
+        android:fontFamily="serif"
+        android:text="Flashlight"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#31707d"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <ToggleButton
+        android:id="@+id/toggleFlashlight"
+        android:layout_width="212dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="96dp"
+        android:onClick="toggleFlashLight"
+        android:text="ToggleButton"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFlashlight"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
